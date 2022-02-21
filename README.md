@@ -10,4 +10,5 @@ kotlin app with firebase implementation to save notes on to the cloud <br/>
 ->add images into the firebase storage <br/>
  <br/>
 --- App ScreenShots --- <br/>
+<img src="./ScreenShots/addNote.jpg"/>
 

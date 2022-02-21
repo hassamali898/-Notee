@@ -1,13 +1,13 @@
 # -Notee
-kotlin app with firebase implementation to save notes on to the cloud
-
----- What you learn from this project ---
-->kotlin
+kotlin app with firebase implementation to save notes on to the cloud <br/>
+<br/>
+---- What you learn from this project --- <br/>
+->kotlin <br/>
 ->create modern user interface <br/>
 ->Recycler view implementation most simplest way <br/>
-->Firebase auth
-->Get/Add/Update/delete data from firebase firestore
-->add images into the firebase storage
-
---- App ScreenShots ---
+->Firebase auth <br/>
+->Get/Add/Update/delete data from firebase firestore <br/>
+->add images into the firebase storage <br/>
+ <br/>
+--- App ScreenShots --- <br/>
 

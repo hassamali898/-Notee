@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SignUpActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SignUp"
+        android:layout_centerHorizontal="true"
+        android:textFontWeight="500"
+        style="@style/TextAppearance.MaterialComponents.Headline4"/>
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp Your Account"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        style="@style/TextAppearance.AppCompat.Caption"/>
+    <!--Email input Field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/emailTitle"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundColor="@color/white"
+        >
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="username"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--Email input Field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundColor="@color/white"
+        >
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--Password input Field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTitle"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTitle"
+        app:boxBackgroundColor="@color/white"
+        >
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--loading indicator-->
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/loadingIndecator"
+        android:layout_below="@+id/passwordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:indicatorSize="25dp"
+        android:layout_marginTop="29dp"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        app:trackThickness="2dp"
+        />
+    <!--SignUp Button-->
+    <Button
+        android:id="@+id/signUpBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordTitle"
+        android:layout_marginTop="20dp"
+        android:text="SignUp" />
+    <TextView
+        android:id="@+id/have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_account"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        style="@style/TextAppearance.AppCompat.Caption"/>
+</RelativeLayout>

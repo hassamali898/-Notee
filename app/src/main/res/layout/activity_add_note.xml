@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+    <include android:id="@+id/header" layout="@layout/add_note_header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/addImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/selectedImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/ic_person_icon"
+                    android:backgroundTint="@color/browser_actions_bg_grey"
+                    android:scaleType="fitCenter"
+                    />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_camera_icon"
+                    android:background="@android:color/transparent"
+                    app:tint="@color/black"
+                    android:scaleType="fitCenter"
+                    />
+
+            </RelativeLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/titleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addImage"
+                android:layout_marginBottom="20dp"
+                app:boxBackgroundColor="@color/white"
+                >
+                <EditText
+                    android:id="@+id/titleET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="title"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:id="@+id/addCaption"
+                android:layout_below="@+id/titleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="Write your Caption.."
+                android:inputType="textMultiLine"
+                android:textSize="16dp"
+                android:padding="12dp"
+                android:scrollbars="vertical"
+                android:background="@color/browser_actions_bg_grey"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -2,7 +2,7 @@
 kotlin app with firebase implementation to save notes on to the cloud <br/>
 <br/>
 ---- What you learn from this project --- <br/>
-->kotlin <br/>
+->create android app using kotlin <br/>
 ->create modern user interface <br/>
 ->Recycler view implementation most simplest way <br/>
 ->Firebase auth <br/>
